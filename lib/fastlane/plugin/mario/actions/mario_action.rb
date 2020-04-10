@@ -5,6 +5,7 @@ module Fastlane
   module Actions
     class MarioAction < Action
       def self.run(params)
+        sh('curl -I www.google.com')
         UI.message("It's meee, Mario!")
       end
 
